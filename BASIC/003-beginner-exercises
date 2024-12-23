@@ -1,0 +1,97 @@
+// 1. Primer ejercicio: Comentario en una línea.
+
+/* 
+2. Segundo ejercicio: Comentario en varias líneas.
+*/
+
+// 3. Tercer ejercicio: Declaramos variables con valores asociados a todos los tipos primitivos.
+let nombre = "Kevin";
+let edad = 17;
+let mayorDeEdad = false;
+let DUI = undefined;
+let usuarioActivo = null;
+let Carnet = Symbol("identificador");
+let numCarnet = BigInt(123456789);
+
+// 4. Cuarto ejercicio: Imprimimos los valores.
+console.log(nombre);
+console.log(edad);
+console.log(mayorDeEdad);
+console.log(DUI);
+console.log(usuarioActivo);
+console.log(Carnet);
+console.log(numCarnet);
+
+// 5. Quinto ejercicio: Imprimimos los tipos.
+console.log(typeof nombre);
+console.log(typeof edad);
+console.log(typeof mayorDeEdad);
+console.log(typeof DUI);
+console.log(typeof usuarioActivo);
+console.log(typeof Carnet);
+console.log(typeof numCarnet);
+
+// 6. Sexto ejercicio: Modificamos valores por otros del mismo tipo.
+nombre = "Alvarado";
+edad = 19;
+mayorDeEdad = true;
+DUI = undefined;
+usuarioActivo = null;
+Carnet = Symbol("nuevoId");
+numCarnet = BigInt(987654321);
+
+console.log(nombre, typeof nombre);
+console.log(edad, typeof edad);
+console.log(mayorDeEdad, typeof mayorDeEdad);
+console.log(DUI, typeof DUI);
+console.log(usuarioActivo, typeof usuarioActivo);
+console.log(Carnet, typeof Carnet);
+console.log(numCarnet, typeof numCarnet);
+
+// 7. Séptimo ejercicio: Modificamos valores por otros de diferente tipo.
+nombre = 12; 
+edad = "edad"; 
+mayorDeEdad = undefined; 
+DUI = null; 
+usuarioActivo = false; 
+Carnet = BigInt(987654321); 
+numCarnet = Symbol("identificador");
+
+console.log(nombre, typeof nombre);
+console.log(edad, typeof edad);
+console.log(mayorDeEdad, typeof mayorDeEdad);
+console.log(DUI, typeof DUI);
+console.log(usuarioActivo, typeof usuarioActivo);
+console.log(Carnet, typeof Carnet);
+console.log(numCarnet, typeof numCarnet);
+
+// 8. Octavo ejercicio: Declaramos constantes con valores asociados a tipos primitivos.
+const nombres = "Kevin Josué";
+const añoNacimiento = 2007;
+const hombre = true;
+const trabajo = undefined;
+const carreraU = null;
+const carnet = Symbol(12345678);
+const numNacimiento = BigInt(123456789987654321);
+
+// 9. Noveno ejercicio: Intentamos modificar las constantes.
+/*
+const nombres = "Alice"
+const añoNacimiento = 2008
+const hombre = false
+const trabajo = undefined
+const carreraU = null
+const carnet = Symbol(987654321)
+const numNacimiento = BigInt(987654321123456789)
+*/
+// Comentamos estas líneas porque provocan errores al ejecutarse.
+console.log("Intentamos modificar constantes:");
+
+// nombres = "Alice"; // Error: no se puede reasignar.
+console.log(nombres);
+
+// añoNacimiento = 2008; // Error: no se puede reasignar.
+console.log(añoNacimiento);
+
+// 10. Comentamos líneas problemáticas.
+console.log("Cualquier intento de modificar constantes está comentado.");
